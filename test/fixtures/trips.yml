@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  destination: MyString
+  description: MyText
+  rating: 1
+  must_visit: MyString
+  fave_restaraunt: MyString
+  hotel: MyString
+  image_url: MyString
+  country_id: 1
+
+two:
+  title: MyString
+  destination: MyString
+  description: MyText
+  rating: 1
+  must_visit: MyString
+  fave_restaraunt: MyString
+  hotel: MyString
+  image_url: MyString
+  country_id: 1

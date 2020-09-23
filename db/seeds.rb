@@ -14,3 +14,13 @@ spain = Country.create(name: "Spain")
 italy = Country.create(name: "Italy")
 thailand = Country.create(name: "Thailand")
 indonesia = Country.create(name: "Indonesia")
+
+Syllabus.create(title: "A Night in Paris",
+    destination: "Paris",
+    description: "Paris should not be described, it should be felt! One of the most breathe-taking cities you will ever visit.", 
+    rating: "9.8",
+    must_visit: "Musee Du Louvre"
+    fave_restaraunt: "Le Petit Pouce"
+    hotel: "B Montmartre Hotel"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/9/97/AdinkraCalabashStamps.jpg", 
+    category_id: france.id)
