@@ -9,7 +9,6 @@ class CreateTrips < ActiveRecord::Migration[6.0]
       t.string :fave_restaraunt
       t.string :hotel
       t.string :image_url
-      t.integer :country_id
 
       t.timestamps
     end

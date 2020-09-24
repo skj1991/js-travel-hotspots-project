@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_23_020137) do
+ActiveRecord::Schema.define(version: 2020_09_24_011708) do
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
@@ -27,9 +27,11 @@ ActiveRecord::Schema.define(version: 2020_09_23_020137) do
     t.string "fave_restaraunt"
     t.string "hotel"
     t.string "image_url"
-    t.integer "country_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "country_id"
+    t.index ["country_id"], name: "index_trips_on_country_id"
   end
 
+  add_foreign_key "trips", "countries"
 end
