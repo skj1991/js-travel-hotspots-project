@@ -1,7 +1,7 @@
 class Api::V1::TripsController < ApplicationController
     def index
-        trip = Trip.all 
-        render json: trip
+        trips = Trip.all 
+        render json: TripSerializer.new(trips)
     end
 
     def create
